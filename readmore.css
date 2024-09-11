@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+.heading{
+    text-align: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 35px;
+    color: red;
+    justify-content: center;
+    padding: 10px;
+    margin: 15px;
+}
+
+.section-container{
+    --bs-gutter-x: 1rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+
+.section-container .columns{
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.section-container .columns .image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+
+.section-container .columns.content .content-container{
+    padding: 40px 50px;
+}
+
+.section-container .columns.content .content-container h2{
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.section-container .columns.content .content-container p{
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 767px){
+    .section-container{
+        flex-flow: row wrap;
+    }
+
+    .section-container .columns .image{
+        display: block;
+        order: 1;
+        width: 100% ;
+        height: 250px;
+    }
+
+    .section-container .columns.content{
+        display: block;
+        order: 2;
+        width: 100% ;
+    }
+
+    .section-container .columns.content .content-container{
+        padding: 30px 25px;
+    }
+
+    .section-container .columns.content .content-container h2{
+        margin-bottom: 5px;
+    }
+
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #000 ;
+
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer p{
+    color:#fff;
+    padding: 10px;
+}
+
+.footer a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 10px;
+    background-color: #fff;
+    color: red;
+    border-radius: 50%;
+}
+
+
+.footerbottom{
+    color: blue;
+    padding-top: 10px;
+    text-align: center;
+}
+.footerbottom span{
+    cursor: pointer;
+}

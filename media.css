@@ -1,0 +1,149 @@
+@media(max-width: 1000px){
+    .hideOnMobile{
+        display: none;
+    }
+}
+
+@media(max-width: 1000px){
+    .drop-down-links ul li{
+        display: none;
+    }
+
+    .drop-down-links p{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: flex-end;
+        padding-bottom: 20px;
+    }
+}
+
+@media(max-width: 1000px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 1000px){
+    .top-shape{
+        margin-top: -50px;
+        margin-left: -50px;
+        height: 300px;
+        width: 70%;
+    }
+}
+
+
+@media(max-width: 1000px){
+    .top-shape h1{
+        margin-top: 100px;
+        font-size: xx-large;
+    }
+}
+
+@media(max-width: 1000px){
+    .main img{
+        width: 60%;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 1000px){
+    .shape2{
+        margin-top: 600px;
+        margin-left: 50px;
+        width: 70%;
+        height:510px;
+    }
+
+    .shape2 h1{
+        font-size: x-large;
+        margin-top: 50px;
+    }
+
+
+    .support{
+        margin-top: 0%;
+        margin-left: -125px;
+    }
+
+/*-------- Logos mobile view -----------*/
+
+    .logo1{
+        width:200px;
+        height: 200px;
+        background-color: rgb(36, 36, 36);
+        border-bottom-left-radius: 0%;
+        border-top-left-radius: 0%;
+        margin-left: 0px;
+    
+    }
+
+
+    .logo2{
+        width:200px;
+        height: 200px;
+        background-color: rgb(36, 36, 36);
+        border-bottom-right-radius: 0%;
+        border-top-right-radius: 0%;
+        float: right;
+        margin-top: 50px;
+    
+    }
+
+
+    .logo3{
+        width:200px;
+        height: 200px;
+        background-color: rgb(36, 36, 36);
+        border-bottom-left-radius: 0%;
+        border-top-left-radius: 0%;
+        margin-top: 100px;
+        margin-left: 0px;
+        margin-bottom: 50px;
+    
+    }
+
+    .support{
+        margin-top: 5px;
+    }
+
+    .slide{
+        margin-top: 410px;
+        max-width: 90%;
+        float:inline-start;
+        margin-left: 40px;
+    }
+
+    .slideshow-frame img{
+        width: 100%;
+    }
+
+    @-webkit-keyframes slide_animation{
+        0% {right:0px;}
+        10% {right:0px;}
+        20% {right:315px;}
+        30% {right:315px;}
+        40% {right:632px;}
+        50% {right:632px;}
+        60% {right:964px;}
+        70% {right:964px;}
+        80% {right:0px;}
+        90% {right:0px;}
+        100% {right:0px;}
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 2s linear;
+}
+
+.container{
+    background: rgba(0, 0, 0, .2);
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+
+.container .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color: #ff0000;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+    font-size: 50px;
+}
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    width:300px;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.content:hover{
+    opacity: 1;
+}
+
+.content h3{
+    font-size: 25px;
+    color: #ffe100;
+    margin-bottom: 15px;
+}
+
+.content p{
+    font-size: 15px;
+    color: #fff;
+}
+
+a{
+    border-radius: 2px;
+    color: #ff0000;
+    margin: 5px;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+a:hover{
+    box-sizing: border-box;
+    color: #ffe100;
+    border-radius: 1px solid #ffe100;
+    box-shadow: transparent;
+}
+
+.content > *{
+    transform: translateY(25px);
+    transition: transform 0.6s;
+}
+
+.content:hover > *{
+    transform: translateY(0px);
+}
+
+
+@media screen and (max-width: 768px){
+
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #000 ;
+
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer p{
+    color:#fff;
+    padding: 10px;
+}
+
+.footer a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 10px;
+    background-color: #fff;
+    color: red;
+    border-radius: 50%;
+}
+
+
+.footerbottom{
+    color: blue;
+    padding-top: 10px;
+    text-align: center;
+}
+.footerbottom span{
+    cursor: pointer;
+}
